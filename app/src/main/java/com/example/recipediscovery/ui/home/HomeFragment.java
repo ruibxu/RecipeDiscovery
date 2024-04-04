@@ -35,7 +35,6 @@ public class HomeFragment extends Fragment {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Replace `YourTargetActivity.class` with the activity you want to navigate to
                 Intent intent = new Intent(getActivity(), PhotoTakingActivity.class);
                 startActivity(intent);
             }
