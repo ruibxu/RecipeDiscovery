@@ -3,23 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_cookbook">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.recipediscovery.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_cookbook"
+        android:name="com.example.recipediscovery.ui.cookbook.CookbookFragment"
+        android:label="@string/title_book"
+        tools:layout="@layout/fragment_cookbook" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.recipediscovery.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_recommendations"
+        android:name="com.example.recipediscovery.ui.recommendations.RecommendationsFragment"
+        android:label="@string/title_recommendations"
+        tools:layout="@layout/fragment_recommendations" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.recipediscovery.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>

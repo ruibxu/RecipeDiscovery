@@ -6,11 +6,12 @@
     android:layout_marginHorizontal="10dp"
     tools:context=".PhotoTakingActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="16dp"
         app:layout_constraintBottom_toTopOf="@+id/photobutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,6 @@
         android:id="@+id/albumButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#AA5A5A"
         android:onClick="dispatchPickPhotoIntent"
         android:text="Album"
         android:layout_marginBottom="5dp"
@@ -59,6 +59,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
